@@ -14,6 +14,10 @@ The Kubeconfigs Public API is available since Rancher v2.12.0 and is enabled by 
 kubectl patch feature ext-kubeconfigs -p '{"spec":{"value":false}}'
 ```
 
+## Kubeconfig Resource
+
+Kubeconfig is a Rancher resource `kubeconfigs.ext.cattle.io`, which is used to generate kubeconfigs. The generated kubeconfigs are then used to configure access to Kubernetes with <code>kubectl</code> or other clients.
+
 ## Creating a Kubeconfig
 
 Only a **valid and active** Rancher user can create a Kubeconfig.
